@@ -1,0 +1,27 @@
+openapi: '3.0.3'
+info:
+  title: 量潮用户鉴权平台
+  version: '0.1.0-alpha.1'
+servers:
+  - url: https://auth.quanttide.com/
+paths:
+  /auth/signup/:
+    post:
+      responses:
+        '200':
+          description: OK
+  /auth/signin/:
+    post:
+      responses:
+        '200':
+          description: OK
+  /auth/signin-vcode/:
+    post:
+      responses:
+        '200':
+          description: OK
+  /auth/token/:
+    post:
+      responses:
+        '200':
+          description: OK
