@@ -1,0 +1,30 @@
+post:
+  operationId: signIn
+  summary: 账号密码登录
+  tags:
+    - 用户
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            username:
+              type: string
+              description: 用户名
+            password:
+              type: string
+              format: password
+              description: 密码
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            description: Tokens for Authorization
+            properties:
+              idToken:
+                type: string
+                description: IDToken

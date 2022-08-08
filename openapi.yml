@@ -5,22 +5,21 @@ info:
 servers:
   - url: https://auth.quanttide.com/
 paths:
-  /auth/signup/:
+  /users/signup/:
+    $ref: paths/signup.yml
+  /users/signin/:
+    $ref: paths/signin.yml
+  /users/signin-vcode/:
     post:
       responses:
         '200':
           description: OK
-  /auth/signin/:
+  /users/token/jwk/:
     post:
       responses:
         '200':
           description: OK
-  /auth/signin-vcode/:
-    post:
-      responses:
-        '200':
-          description: OK
-  /auth/token/:
+  /users/token/refresh/:
     post:
       responses:
         '200':

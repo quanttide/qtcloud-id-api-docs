@@ -1,0 +1,15 @@
+post:
+  operationId: signUp
+  summary: 账号密码注册
+  tags:
+    - 用户
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              type: string
+              description: Tokens for Authorization
